@@ -11,9 +11,11 @@ export function Footer() {
           </div>
           <span className="text-sm font-medium text-slate-400">Signal Guard</span>
         </div>
-        <p className="text-xs text-slate-600">
-          &copy; {new Date().getFullYear()} Signal Guard. All rights reserved.
-        </p>
+        <div className="flex items-center gap-4">
+          <a href="/privacy" className="text-xs text-slate-600 hover:text-slate-400 transition-colors">Privacy Policy</a>
+          <a href="/terms" className="text-xs text-slate-600 hover:text-slate-400 transition-colors">Terms of Service</a>
+          <span className="text-xs text-slate-600">&copy; {new Date().getFullYear()} Signal Guard</span>
+        </div>
       </div>
     </footer>
   );
