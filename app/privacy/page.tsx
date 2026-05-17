@@ -1,10 +1,15 @@
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+
 export const metadata = {
   title: "Privacy Policy — Signal Guard",
 };
 
 export default function PrivacyPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-24 text-slate-300">
+    <>
+      <Navbar />
+      <main className="max-w-3xl mx-auto px-6 py-24 pt-32 text-slate-300">
       <h1 className="text-3xl font-bold text-white mb-2">Privacy Policy</h1>
       <p className="text-slate-500 text-sm mb-12">Last updated: May 2025</p>
 
@@ -14,7 +19,7 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-white mb-3">1. Who We Are</h2>
           <p>
             Signal Guard is a service operated by Umut Çakmak ("we", "us", or "our"),
-            an individual merchant based in Turkey. You can reach us at{" "}
+            based in Turkey. You can reach us at{" "}
             <a href="mailto:data@umutcakmak.com" className="text-indigo-400 hover:underline">
               data@umutcakmak.com
             </a>.
@@ -150,5 +155,7 @@ export default function PrivacyPage() {
 
       </section>
     </main>
+    <Footer />
+    </>
   );
 }

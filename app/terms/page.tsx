@@ -1,10 +1,15 @@
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+
 export const metadata = {
   title: "Terms of Service — Signal Guard",
 };
 
 export default function TermsPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-24 text-slate-300">
+    <>
+      <Navbar />
+      <main className="max-w-3xl mx-auto px-6 py-24 pt-32 text-slate-300">
       <h1 className="text-3xl font-bold text-white mb-2">Terms of Service</h1>
       <p className="text-slate-500 text-sm mb-12">Last updated: May 2025</p>
 
@@ -14,8 +19,7 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold text-white mb-3">1. Acceptance of Terms</h2>
           <p className="text-slate-400">
             By accessing or using Signal Guard ("the Service"), you agree to be bound by these
-            Terms of Service. The Service is operated by Umut Çakmak, an individual merchant
-            based in Turkey. If you do not agree to these terms, please do not use the Service.
+            Terms of Service. The Service is operated by Umut Çakmak, based in Turkey. If you do not agree to these terms, please do not use the Service.
           </p>
         </div>
 
@@ -123,5 +127,7 @@ export default function TermsPage() {
 
       </section>
     </main>
+    <Footer />
+    </>
   );
 }
